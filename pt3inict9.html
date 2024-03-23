@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzy</title>
+        
+    <style>
+        body {
+  background-color: #d2aeed;
+}
+.div {
+  background-color: #9704aa;
+  width: 350px;
+  border: 1px solid #9704aa;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 65px;
+  color: #ffffff;
+}
+p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+.button {
+  background-color: #9c61e4;
+  border: none;
+  border-radius: 10px;  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-right: px;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #9c61e4; 
+  border: none;
+  border-radius: 10px;  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #ffffff; 
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;  
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  margin-left: 100px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+.a11 {
+  text-decoration: none;
+  color: aliceblue;
+}
+.a1 {
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.a2 {
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+}
+
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="div">
+      <h1><a href="pt3inictmain.html" class="a11">
+        Quizzy
+        </a>
+        </h1>
+    </div>
+    
+    <div class="a2" id="box"> Which of the following is a factor of the polynomial 
+      x^3-4x^2+3-12?</div>
+    <p id="A" class="a2"></p>
+    <br>
+    
+    <button class="button" id="yes" onclick="Choice(this);"><a href="pt3inict10 .html" class="a11"> A.)  (x-4)(x^2+3) </a></button>
+    <button class="button" id="no" onclick="Choice(this);Inc();"> B.) x-4</button>
+    <button class="button" id="no" onclick="Choice(this);Inc2();"> C.) (x^2+4)(x-4)</button>
+   
+  </center>
+  
+    <button class="button2"><a class="a1" href="pt3inict8.html">back</a></button>
+
+    <script>
+    function Choice(elem) {
+   var box = document.getElementById("box");
+   if (elem.id == "no") {
+     box.style.backgroundColor = "#ffa6a6" ;
+   } else if (elem.id == "yes") {
+     href="pt3inict2.html";
+   } 
+ };
+ function Inc() {
+  document.getElementById("A").innerHTML = ' "Incorrect answer, try again..." '
+ }
+ function Inc2() {
+  document.getElementById("A").innerHTML = ' "Incorrect answer..." '
+ }
+    </script>
+
+</body>
+</html>
